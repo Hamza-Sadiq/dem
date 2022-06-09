@@ -1,0 +1,50 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color:white;
+    background-image: url("doc.jpg");
+    background-repeat: repeat;
+    background-color: cover;
+
+}
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.container{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    box-shadow: 10px 10px 10px red;
+    display: grid;
+    place-content: center;
+}
+
+.proposal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.proposal a{
+    box-shadow: 10px 5px 10px red;
+    padding: 3rem;
+    font-size: 2rem;
+}

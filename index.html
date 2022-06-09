@@ -1,0 +1,442 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>DEMS</title>
+    <style media="screen">
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080710;
+        }
+
+        .background {
+            width: 430px;
+            height: 520px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(#1845ad,
+                    #23a2f6);
+            left: -80px;
+            top: -80px;
+        }
+
+        .shape:last-child {
+            background: linear-gradient(to right,
+                    #ff512f,
+                    #f09819);
+            right: -30px;
+            bottom: -80px;
+        }
+
+        form {
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+        }
+
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+
+        form h3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        ::placeholder {
+            color: #e5e5e5;
+        }
+
+        button {
+            margin-top: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social {
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .social div {
+            background: red;
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.27);
+            color: #eaf0fb;
+            text-align: center;
+        }
+
+        .social div:hover {
+            background-color: rgba(255, 255, 255, 0.47);
+        }
+
+        .social .fb {
+            margin-left: 25px;
+        }
+
+        .social i {
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div id="mainlogbody" class="log">
+        <div class="background">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+        </div>
+        <form>
+            <i class="fa-solid fa-xmark cross"></i>
+            <h3>Login Here</h3>
+
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="username">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <button>Log In</button>
+            <div class="social">
+                <div class="go"><i class="fab fa-google"></i> Google</div>
+                <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+            </div>
+        </form>
+    </div>
+    <div class="main">
+        <nav id="navbar">
+            <div class="brandname" id="brandname">
+                <h3>DEMS</h3>
+            </div>
+            <div id="nav-items">
+                <ul>
+                    <li><a href="signup.html" style="color: white; text-decoration:none ; ">Get Started</a></li>
+                    <li><a href="developers.html" style="color: white; text-decoration:none ; ">Developers</a> </li>
+                    <li><a href="coins.html" style="color: white; text-decoration:none ; ">Coins</a> </li>
+                    <li> Community</li>
+                    <li>Ecosystem</li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bars"></i>
+
+        </nav>
+        <div id="landing-page">
+
+            <div class="title">
+                <div class="intro">
+                    <h1>Digital Exchange<br> Management System.</h1>
+                </div>
+                <div class="buttons">
+                    <button id="build"> START BUILDING</button>
+                    <button id="documents"><a href="documentation.html"
+                            style="color: white; text-decoration:none; ">READ DOCUMENTATION</a> </button>
+                </div>
+            </div>
+            <div id="vid">
+                <video width="400" playsinline loop muted autoplay src="DEMS.mp4"></video>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="child child1">
+            <div class="text">
+                <p>Total Transactions</p>
+            </div>
+            <div class="money">
+                <h3>$<span id="mon"> 78485849930</h3>
+            </div>
+        </div>
+        <div class="child child2" id="lol">
+
+            <div class="text">
+                <p>Validation Nodes</p>
+            </div>
+            <div class="money">
+                <h3><span id="nodes">1000</span></h3>
+            </div>
+        </div>
+        <div class="child child3">
+            <div class="text">
+                <p>Cost Per Transactions</p>
+            </div>
+            <div class="money">
+                <div class="icons">
+                    <i class="fa-solid fa-arrow-trend-down trenddown"></i><i
+                        class="fa-solid fa-arrow-trend-up trendup"></i>
+                </div>
+                <div class="paise">
+                    <h3 id="dollor">$<span id="transaction"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="child child4">
+            <div class="text">
+                <p>Transactions per second</p>
+            </div>
+            <div class="money">
+                <h3> 2342</h3>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="contain">
+            <div class="text1">
+                <h1>Join the fastest growing ecosystem.</h1>
+            </div>
+            <div class="text2">
+                <div class="t">
+                    <p>Solana is the fastest blockchain in the world and the fastest growing ecosystem in crypto, with
+                        thousands of projects spanning DeFi, NFTs, Web3 and more.</p>
+                </div>
+                <div class="btnpink">
+                    <button>Explore The Ecosystem</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="vid2">
+            <video playsinline loop muted autoplay src="video2.mp4"></video>
+        </div>
+        <div class="polygon">
+            <div class="polydiv">
+
+            </div>
+            <div class="heading">
+                <h2>Say hello</h2>
+            </div>
+            <div class="para">
+                <p>Learn more about Solana and see what makes is great</p>
+            </div>
+            <div class="polybtn">
+                <button> WATCH VIDEO <i class="fa-solid fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="container5">
+            <div class="mainhead">
+                <h1><span id="big">Scale</span> <br><span id="par"> for global adoption</span></h1>
+            </div>
+            <div class="section5para">
+                <p>Integrate once and never worry about scaling again. Solana ensures composability between ecosystem
+                    projects by maintaining a single global state as the network scales. Never deal with fragmented
+                    Layer 2
+                    systems or sharded chains.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section6">
+        <img src="section6.jpg" alt="">
+    </div>
+    <div class="section7">
+        <div class="card card1">
+            <div class="card1heading">
+                <h1>Low cost, <br> forever</h1>
+            </div>
+            <div class="card1para">
+                <p>Solana's scalability ensures transactions remain less than $0.01 for both developers and users.</p>
+            </div>
+            <div class="card1img">
+                <img src="png.png" alt="">
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="card2heading">
+                <h1>Fast, forever</h1>
+            </div>
+            <div class="card2para">
+                <p>Solana is all about speed, with 400 millisecond block times. And as hardware gets faster, so does the
+                    network.</p>
+            </div>
+            <div class="card2img">
+                <img src="png2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="section8">
+        <div class="sec8img">
+            <img src="sec8.png" alt="">
+        </div>
+        <div class="sec8container">
+            <div class="sec8head">
+                <h1> <span id="big2">Decentralized</span> <br>
+
+                    <span id="small">and secure</span></h1>
+            </div>
+            <div class="sec8para">
+                <p>Not only is Solana ultra-fast and low cost, it is censorship resistant. The Solana network is spread
+                    over
+                    thousands of independent nodes — which means that your transactions are always safe.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section9">
+        <div class="sec9container">
+            <div class="sec9card1 sec9card">
+                <div class="sec9head">
+                    <h1>Solana Community</h1>
+                </div>
+                <div class="sec9para">
+                    <p>There's something for everybody. Follow along, chat on Discord, or read up on what we’re doing.
+                    </p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+            <div class="sec9card2 sec9card">
+                <div class="sec9head">
+                    <h1>Become a Validator</h1>
+                </div>
+                <div class="sec9para">
+                    <p>Help secure the network by running decentralized infrastructure. Learn about operating a
+                        validator node.</p>
+                    <button>GET STARTED</button>
+                </div>
+            </div>
+            <div class="sec9card3 sec9card">
+                <div class="sec9poly">
+                    <h1></h1>
+                </div>
+                <div class="sec9head">
+                    <h1>Developer Resources</h1>
+                </div>
+                <div class="sec9para">
+                    <p>See the get started guide, videos, tutorials, SDKs, reference implementations, and more.</p>
+                    <button>START BUILDING</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section10">
+        <div class="sec10container">
+            <div class="sec10head">
+                <h1>Get more out of Solana</h1>
+            </div>
+            <div class="build">
+                <div class="l build0"><a href="">Build</a> </div>
+                <div class="l build1"><a href="">Docs</a></div>
+                <div class="l build2"><a href="">GitHub</a></div>
+                <div class="l build3"><a href="">Chats on Discord</a></div>
+                <div class="l build4"><a href="">Status</a></div>
+            </div>
+            <div class="apply">
+                <div class="l apply0"><a href="">Apply</a></div>
+                <div class="l apply1"><a href="">Grants</a></div>
+                <div class="l apply2"><a href="">Collective</a></div>
+                <div class="l apply3"><a href="">Careers</a></div>
+            </div>
+            <div class="learn">
+                <div class="l learn0"><a href="">Learn</a></div>
+                <div class="l learn1"><a href="">Blog</a></div>
+                <div class="l learn2"><a href="">Podcast</a></div>
+                <div class="l learn3"><a href="">Videos</a></div>
+                <div class="l learn4"><a href="">Network Stats</a></div>
+            </div>
+            <div class="other">
+                <div class="l other0"><a href="">Other</a></div>
+                <div class="l other1"><a href="">Break Solana</a></div>
+                <div class="l other2"><a href="">Disclaimer</a></div>
+                <div class="l other3"><a href="">Press & Brand</a></div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="sec10poly"></div>
+            <div class="brand">DEMS</div>
+            <div class="web">DEMS.COM</div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+
+<script src="app.js"></script>
+
+</html>

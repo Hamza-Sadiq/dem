@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Sign Up</title>
+    <style>
+
+        
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .mainsignup{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    background-image: url("lap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+
+.signupcontainer{
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    box-shadow: 5px 5px 8px red;
+   
+
+}
+
+
+.formcontainer{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+    /* opacity:0; */
+
+}
+.formcontainer h3{
+    font-size: 1rem;
+}
+
+input{
+    background-color: rgba(255,255,255);
+    padding: 0.4rem;
+    border-radius: 14px;
+}
+.pic{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items:center ;
+}
+.pic .user{
+    font-size: 20rem;
+    color:white;
+}
+
+#sign{
+    background-color:fuchsia;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    padding: 0.635rem 0.725rem;
+    border-radius: 14px;
+    color:white;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:600px){
+ 
+body{
+    overflow: hidden;
+}
+
+    .signupcontainer{
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+    }
+    .pic .user{
+    font-size: 5rem;
+    color:white;
+    }
+    .formcontainer{
+        width: 100%;
+    }
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mainsignup">
+        <div class="signupcontainer">
+           
+            <div class="pic">
+                <i class="fa-solid fa-user user"></i>
+            </div>
+            <div class="formcontainer">
+                <form action="">
+                    <label for="fname">
+                        <h3>First Name</h3>
+                    </label>
+                    <input type="text" name="fname" id="first" placeholder="First Name">
+                    <label for="fname">
+                        <h3>Last Name</h3>                    </label>
+                    <input type="text" name="lname" placeholder="Last Name" id="last">
+                    <label for="Email">
+                        <h3>Email</h3>
+                    </label>
+                    <input type="email" name="email" placeholder="Email"id="">
+                    <label for="username">
+                        <h3>Username</h3>
+                    </label>
+                    <input type="text" name="text" id="first" placeholder="Username">
+                    <label for="password">
+                        <h3>Password</h3>
+                    </label>
+                    <input type="password" name="password" id="first" placeholder="Password">
+                    <button id="sign">Sign-up</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script>
+        gsap.from(".pic",{
+            duration:2,
+            opacity:0,
+            x:200,
+        })
+
+
+        gsap.from(".formcontainer",{
+            duration:1,
+            delay:1.5,
+            stagger:0.5,
+            opacity:0,
+            y:-400
+        })
+
+
+    </script>
+</html>

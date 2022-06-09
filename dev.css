@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Tiro Gurmukhi,sans-serif,cursive;
+}
+
+.vid {
+    width: 100%;
+}
+
+.mainhead{
+    position: relative;
+    top:0;
+    color:white;
+    display: inline;
+    font-size: 3rem;
+    text-align: center;
+}
+.main{
+   
+    width: 100%;
+    display: flex;
+    
+}
+
+.container99{
+    color: white;
+    display: grid;
+    grid-gap:2rem 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+grid-template-columns: 50% 50%;
+
+}
+.vid{
+object-fit: cover;
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.container99 img{
+    width:20%;
+    clip-path: circle();
+}
+
+
+.dev1,.dev2,.dev3,.dev4{
+    text-align: center;
+    border-radius: 24px;
+    background:linear-gradient(rgb(20, 241, 149,0.9), rgb(153, 69, 255,0.99));
+    color: black;
+    padding: 2rem;
+
+}
+.dev4{
+    padding: 2.5rem;
+}
+
+.dev2{
+    padding: 1rem;
+}
+
+
+
+.social{
+    
+    margin: 0.7rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    width: 50%;
+}
+
+.social a{
+    color: black;
+}
+
+
+@media only screen and (max-width:600px){
+    .container99{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .mainhead{
+        font-size: 2rem;
+    }
+}
